@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zebra Logistics Group</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+
+    <link href="/style.css?ver=0.1.0" rel="stylesheet">
 </head>
 <body>
+
+<header>
+    <div class="container flex justify-between py-5">
+        <div>
+            <img src="img/logo-1.png" alt="Логотип">
+        </div>
+
+        <div class="flex gap-4">
+            <img class="w-9 h-9 object-contain object-center" src="img/avatar-1.jpg" alt="Аватар">
+            <div>
+                <div class="font-display text-[15px]">Михаил</div>
+                <div class="text-xs text-green-200">ID 12342</div>
+            </div>
+            <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.835 2.5H4.16838C3.24921 2.5 2.50171 3.2475 2.50171 4.16667V7.5H4.16838V4.16667H15.835V15.8333H4.16838V12.5H2.50171V15.8333C2.50171 16.7525 3.24921 17.5 4.16838 17.5H15.835C16.7542 17.5 17.5017 16.7525 17.5017 15.8333V4.16667C17.5017 3.2475 16.7534 2.5 15.835 2.5Z"
+                          fill="#FF6666"/>
+                    <path d="M9.16667 13.3333L13.3333 10L9.16667 6.66668V9.16751H2.5V10.8342H9.16667V13.3333Z" fill="#FF6666"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div>
+
+        <div class="bg-green-100 hover:bg-yellow-500 transition rounded-lg flex items-center justify-between gap-4 py-2 px-5 text-[15px]">
+            <div>0008965</div>
+            <div>TRHU8036321</div>
+            <div>Шанхай-Владивосток-Москва</div>
+            <div>01.01.2023</div>
+            <div>01.01.2023</div>
+            <div>01.01.2023</div>
+            <div>01.01.2023</div>
+            <div>01.01.2023</div>
+            <div>01.01.2023</div>
+            <div class="ml-8">
+                <button class="flex gap-5 items-center">
+                    <span class="text-sm bg-white rounded-lg py-2 px-3">Подробнее</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21L19.5 13.5L18.4425 12.4425L12.75 18.1275L12.75 3H11.25L11.25 18.1275L5.5575 12.4425L4.5 13.5L12 21Z" fill="#373737"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </body>
 </html>

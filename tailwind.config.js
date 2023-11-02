@@ -10,7 +10,8 @@ module.exports = {
                     500: '#F4C74B'
                 },
                 'green': {
-                    100: '#E1E7DC'
+                    100: '#E1E7DC',
+                    200: '#B5C0AB',
                 },
                 'gray': {
                     900: '#05111A',
@@ -26,14 +27,14 @@ module.exports = {
                 md: '768px',
                 lg: '768px',
                 xl: '1280px',
-                '2xl': '1328px',
+                '2xl': '1400px',
             },
             padding: {
                 DEFAULT: '10px',
-                sm: '24px',
-                lg: '24px',
-                xl: '24px',
-                '2xl': '24px',
+                sm: '20px',
+                lg: '20px',
+                xl: '20px',
+                '2xl': '20px',
             },
         },
     },
