@@ -15,27 +15,35 @@
     .table-cols div:nth-child(1) {
         @apply xl:w-[100px];
     }
+
     .table-cols div:nth-child(2) {
         @apply xl:w-[120px];
     }
+
     .table-cols div:nth-child(3) {
         @apply xl:w-[240px] truncate;
     }
+
     .table-cols div:nth-child(4) {
         @apply xl:w-[90px];
     }
+
     .table-cols div:nth-child(5) {
         @apply xl:w-[90px];
     }
+
     .table-cols div:nth-child(6) {
         @apply xl:w-[90px];
     }
+
     .table-cols div:nth-child(7) {
         @apply xl:w-[90px];
     }
+
     .table-cols div:nth-child(8) {
         @apply xl:w-[90px];
     }
+
     .table-cols div:nth-child(9) {
         @apply xl:w-[90px];
     }
@@ -81,5 +89,13 @@
 
     .route-item__label {
         @apply bg-gray-900 bg-opacity-40 text-white rounded inline-flex items-center gap-2 py-1 px-2 ml-[22px];
+    }
+
+    .form-control {
+        @apply py-2 px-4 rounded-lg border border-green-200 bg-white focus:ring-green-200;
+    }
+
+    .input-checkbox {
+        @apply focus:ring-green-200 h-4 w-4 text-green-200 border-green-200 rounded;
     }
 }
