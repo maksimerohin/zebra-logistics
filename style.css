@@ -573,11 +573,58 @@ video {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   color: #05111A;
 }
 
 .font-display {
   font-family: 'Geologica', sans-serif;
+}
+
+@media (min-width: 1280px) {
+  .table-cols div:nth-child(1) {
+    width: 100px;
+  }
+
+  .table-cols div:nth-child(2) {
+    width: 120px;
+  }
+}
+
+.table-cols div:nth-child(3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 1280px) {
+  .table-cols div:nth-child(3) {
+    width: 240px;
+  }
+
+  .table-cols div:nth-child(4) {
+    width: 90px;
+  }
+
+  .table-cols div:nth-child(5) {
+    width: 90px;
+  }
+
+  .table-cols div:nth-child(6) {
+    width: 90px;
+  }
+
+  .table-cols div:nth-child(7) {
+    width: 90px;
+  }
+
+  .table-cols div:nth-child(8) {
+    width: 90px;
+  }
+
+  .table-cols div:nth-child(9) {
+    width: 90px;
+  }
 }
 
 /*Info Items*/
@@ -590,6 +637,7 @@ body {
 .info-item dt {
   margin-bottom: -1px;
   margin-right: -1px;
+  cursor: default;
   border-right-width: 1px;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -600,11 +648,12 @@ body {
   padding-right: 1rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .info-item dd {
   margin-bottom: -1px;
+  cursor: default;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(181 192 171 / var(--tw-border-opacity));
@@ -617,6 +666,10 @@ body {
 }
 
 /*Route Items*/
+
+.route-item {
+  cursor: default;
+}
 
 .route-item > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -683,20 +736,16 @@ body {
   position: relative;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-4 {
@@ -715,24 +764,16 @@ body {
   width: 2.25rem;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[140px\] {
-  width: 140px;
-}
-
 .w-\[160px\] {
   width: 160px;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .min-w-\[200px\] {
   min-width: 200px;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .flex-col {
@@ -829,10 +870,6 @@ body {
   padding: 1.25rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -841,6 +878,11 @@ body {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-1 {
@@ -861,11 +903,6 @@ body {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-6 {
@@ -891,8 +928,8 @@ body {
   font-weight: 300;
 }
 
-.leading-none {
-  line-height: 1;
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-tight {
@@ -917,15 +954,13 @@ body {
   background-color: rgb(244 199 75 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 1024px) {
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 @media (min-width: 1280px) {
   .xl\:ml-8 {
     margin-left: 2rem;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:hidden {

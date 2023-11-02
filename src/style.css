@@ -4,11 +4,40 @@
 
 @layer components {
     body {
+        font-family: 'Roboto', sans-serif;
         color: #05111A;
     }
 
     .font-display {
         font-family: 'Geologica', sans-serif;
+    }
+
+    .table-cols div:nth-child(1) {
+        @apply xl:w-[100px];
+    }
+    .table-cols div:nth-child(2) {
+        @apply xl:w-[120px];
+    }
+    .table-cols div:nth-child(3) {
+        @apply xl:w-[240px] truncate;
+    }
+    .table-cols div:nth-child(4) {
+        @apply xl:w-[90px];
+    }
+    .table-cols div:nth-child(5) {
+        @apply xl:w-[90px];
+    }
+    .table-cols div:nth-child(6) {
+        @apply xl:w-[90px];
+    }
+    .table-cols div:nth-child(7) {
+        @apply xl:w-[90px];
+    }
+    .table-cols div:nth-child(8) {
+        @apply xl:w-[90px];
+    }
+    .table-cols div:nth-child(9) {
+        @apply xl:w-[90px];
     }
 
     /*Info Items*/
@@ -17,16 +46,16 @@
     }
 
     .info-item dt {
-        @apply font-bold text-sm py-2 px-4 border-r border-b border-green-200 -mb-px -mr-px;
+        @apply font-medium text-sm py-2 px-4 border-r border-b border-green-200 -mb-px -mr-px cursor-default;
     }
 
     .info-item dd {
-        @apply text-[15px] py-2 px-4 border-b border-green-200 -mb-px text-center;
+        @apply text-[15px] py-2 px-4 border-b border-green-200 -mb-px text-center cursor-default;
     }
 
     /*Route Items*/
     .route-item {
-        @apply space-y-3 overflow-hidden pb-4;
+        @apply space-y-3 overflow-hidden pb-4 cursor-default;
     }
 
     .route-item:last-child {
