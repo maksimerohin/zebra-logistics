@@ -590,19 +590,22 @@ body {
 .info-item dt {
   margin-bottom: -1px;
   margin-right: -1px;
-  border-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(181 192 171 / var(--tw-border-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
 }
 
 .info-item dd {
   margin-bottom: -1px;
-  border-width: 1px;
+  border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(181 192 171 / var(--tw-border-opacity));
   padding-top: 0.5rem;
@@ -610,6 +613,7 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
+  font-size: 15px;
 }
 
 /*Route Items*/
@@ -687,16 +691,16 @@ body {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-4 {
   height: 1rem;
 }
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .w-4 {
@@ -707,8 +711,8 @@ body {
   width: 2.25rem;
 }
 
-.w-8 {
-  width: 2rem;
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .items-center {
@@ -731,6 +735,10 @@ body {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-lg {
@@ -817,6 +825,16 @@ body {
   padding-bottom: 1.25rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -851,4 +869,10 @@ body {
 .hover\:bg-yellow-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 199 75 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
