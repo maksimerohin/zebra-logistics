@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/style.css -o ./style.css --watch",
+    "sync": "browser-sync start --server --files \"*.html,*.css\""
+  }
+}
