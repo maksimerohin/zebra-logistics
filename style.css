@@ -1060,6 +1060,28 @@ body {
   transition-duration: 150ms;
 }
 
+@font-face {
+  font-family: "Calibri";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  /* Браузер сначала попробует найти шрифт локально */
+
+  src: local("Calibri"),
+        /* Если не получилось, загрузит woff2 */ /*url("/fonts/calibri.woff2") format("woff2"),*/ /* Если браузер не поддерживает woff2, загрузит woff */
+    url("/fonts/calibri.woff") format("woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Calibri", sans-serif;
+}
+
 .hover\:bg-yellow-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 199 75 / var(--tw-bg-opacity));
